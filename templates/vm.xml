@@ -1,0 +1,23 @@
+<domain type='kvm'>
+  <name>${VM_NAME}</name>
+  <memory>131072</memory>
+  <vcpu>${CPU_COUNT}</vcpu>
+  <os>
+    <type>hvm</type>
+  </os>
+  <clock sync="localtime"/>
+  <devices>
+    <emulator>/usr/bin/kvm-spice</emulator>
+    <disk type='file' device='disk'>
+      <driver name='qemu' type='raw' cache='none'/>
+      <source file='/var/lib/libvirt/images/${VOLUME_NAME}'/>
+      <target dev='vdb'/>
+    </disk>
+    <interface type='network'>
+      <source network='${NETWORK_NAME}'/>
+      <mac address='52:54:00:fd:5e:76'/>
+    </interface>
+    <graphics type='vnc' port='-1' keymap='de'/>
+  </devices>
+</domain>
+
