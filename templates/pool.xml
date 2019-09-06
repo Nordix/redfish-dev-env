@@ -1,6 +1,5 @@
 <pool type='dir'>
   <name>default</name>
-  <uuid>70438f2a-592c-4231-bb57-245acc7a3a84</uuid>
   <capacity unit='bytes'>500695072768</capacity>
   <allocation unit='bytes'>117244059648</allocation>
   <available unit='bytes'>383451013120</available>
@@ -15,4 +14,3 @@
     </permissions>
   </target>
 </pool>
-

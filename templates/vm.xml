@@ -19,4 +19,3 @@
     <graphics type='vnc' port='-1' keymap='de'/>
   </devices>
 </domain>
-

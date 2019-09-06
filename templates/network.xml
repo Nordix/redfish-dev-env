@@ -6,10 +6,9 @@
     </nat>
   </forward>
   <bridge name='br0' stp='on' delay='0'/>
-  <mac address='52:54:00:fd:5e:76'/>
-  <ip address='192.168.100.1' netmask='255.255.255.0'>
+  <ip address='10.10.0.1' netmask='255.255.255.0'>
     <dhcp>
-      <range start='192.168.100.2' end='192.168.100.254'/>
+      <range start='10.10.0.2' end='10.10.0.254'/>
     </dhcp>
   </ip>
 </network>
