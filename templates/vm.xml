@@ -15,7 +15,6 @@
     </disk>
     <interface type='network'>
       <source network='${NETWORK_NAME}'/>
-      <mac address='52:54:00:fd:5e:76'/>
     </interface>
     <graphics type='vnc' port='-1' keymap='de'/>
   </devices>
